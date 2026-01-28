@@ -9,24 +9,35 @@ export default function Login() {
   const [error, setError] = useState('')
 
   //Step 1 - create the supabase client
-  const supabase = createClient()
-
   async function handleSignIn() {
-    console.log("Signing in");
-    //Step 1 - create the supabase client
-    //Step 2 - sign in the user
-    //Step 3 - redirect to the dashboard
-    //Step 4 - show a success message
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    })
+  
+    if (error) {
+      setError(error.message)
+    } else {
+      setError("✅ Signed in successfully")
+      window.location.href = "/dashboard"
+    }
   }
-
+  
   async function handleSignUp() {
-    console.log("Signing up");
-    //Step 1 - create the supabase client
-    //Step 2 - sign up the user
-    //Step 3 - redirect to the dashboard
-    //Step 4 - show a success message
-    //Step 5 - show an error message if the user already exists
+    const { error } = await supabase.auth.signUp({
+      email,
+      password,
+    })
+  
+    if (error) {
+      setError(error.message)
+    } else {
+      setError("✅ Account created. Check your email.")
+    }
   }
+  
+
+  
 
   return (
     <>

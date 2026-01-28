@@ -1,9 +1,9 @@
-import { createClient } from '@/lib/supabase/server'
+import { supabase } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import {logout} from './actions'
 
 export default async function Dashboard() {
-  const supabase = await createClient()
+  
   //Step 1 - get the user from the database
 
 
