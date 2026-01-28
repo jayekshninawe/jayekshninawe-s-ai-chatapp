@@ -137,7 +137,7 @@ export default function Login() {
               flex: 1,
               padding: '12px 24px',
               background: '#667eea',
-              color: 'brown',
+              color: 'white',
               border: 'none',
               borderRadius: '8px',
               fontSize: '1rem',
