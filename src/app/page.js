@@ -9,7 +9,7 @@ export default function Home() {
       alignItems: 'center',
       justifyContent: 'center',
       padding: '50px 20px',
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      background: 'linear-gradient(135deg, #8B4513 0%, #5D3A1A 100%)',
       color: 'white'
     }}>
       <div style={{
@@ -45,7 +45,7 @@ export default function Home() {
             style={{
               padding: '15px 40px',
               background: 'white',
-              color: '#667eea',
+              color: '#8B4513',
               textDecoration: 'none',
               borderRadius: '8px',
               fontWeight: '600',
