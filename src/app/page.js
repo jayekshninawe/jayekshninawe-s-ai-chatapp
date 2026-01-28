@@ -56,6 +56,23 @@ export default function Home() {
           >
             Get Started
           </Link>
+          <Link
+            href="/chat"
+            style={{
+              padding: '15px 40px',
+              background: 'transparent',
+              color: 'white',
+              border: '2px solid white',
+              textDecoration: 'none',
+              borderRadius: '8px',
+              fontWeight: '600',
+              fontSize: '1.1rem',
+              display: 'inline-block',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+            }}
+          >
+            Go to Chat
+          </Link>
         </div>
       </div>
     </div>
